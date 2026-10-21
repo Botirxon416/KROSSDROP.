@@ -1,0 +1,777 @@
+@font-face {
+    font-family: "A";
+    src: url(../fonts/ArchivoNarrow-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "S";
+    src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1216px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 20px 0px 20px 0px;
+    background-color: #16161A99;
+    border-bottom: 1px solid #dad5d562;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "A";
+    color: #E4E2DD;
+    line-height: 38px;
+    letter-spacing: -1.6px;
+    vertical-align: middle;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation li a {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "S";
+    color: #E4E2DD;
+    letter-spacing: 0.7px;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.navigation li a:hover {
+    color: #CAF231;
+}
+
+.navigation li:nth-child(2) a {
+    color: #CAF231;
+    border-bottom: 2px solid #CAF231;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-buttons li:nth-child(4) a {
+    padding: 8px 24px;
+    background-color: #CAF231;
+    border-radius: 9999px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "S";
+    color: #171E00;
+}
+
+#all-sneakers-header {
+    padding-top: 128px;
+    background-color: #0C0C0E;
+}
+
+.market-section-nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.market-section-nav a {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.market-section-nav a:nth-child(2) {
+    color: #CAF231;
+}
+
+.market-section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.market-section-header h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "A";
+    color: #E3E4D1;
+    line-height: 24px;
+}
+
+.market-section-header p {
+    font-size: 20px;
+    font-weight: 450;
+    font-family: "A";
+    color: #CAF231;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.market-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.market-nav:nth-child(1) {
+    background-color: #CAF231;
+    border-color: transparent;
+    color: #0C0C0E;
+}
+
+.market-nav {
+    padding: 13px 32px;
+    border-radius: 9999px;
+    border: 2px solid #FFFFFF14;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #FFFFFF;
+}
+
+#all-sneakers-cards {
+    padding-top: 64px;
+    padding-bottom: 130px;
+    background-color: #0C0C0E;
+}
+
+.brand {
+    padding-bottom: 32px;
+}
+
+.brand input {
+    appearance: none;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #FFFFFF14;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.brand input::after {
+    content: url(../images/check.svg);
+    opacity: 0%;
+    position: absolute;
+    top: -1px;
+    left: -2.74px;
+}
+
+.brand input:checked {
+    background-color: #CAF231;
+}
+
+.brand input:checked::after {
+    opacity: 100%;
+}
+
+body:has(#nike:checked) .s-card1 {
+    order: -10;
+}
+body:has(#nike:checked) .s-card7 {
+    order: -9;
+}
+body:has(#adidas:checked) .s-card2 {
+    order: -10;
+}
+body:has(#adidas:checked) #see-more:checked ~ .s-card11 {
+    order: -9;
+}
+body:has(#jordan:checked) .s-card4 {
+    order: -10;
+}
+body:has(#jordan:checked) .s-card9 {
+    order: -9;
+}
+body:has(#newbalance:checked) .s-card3 {
+    order: -10;
+}
+body:has(#newbalance:checked) .s-card8 {
+    order: -9;
+}
+body:has(#puma:checked) .s-card5 {
+    order: -10;
+}
+body:has(#asics:checked) .s-card6 {
+    order: -10;
+}
+body:has(#adidas:checked) .s-card11 {
+    order: -10;
+}
+body:has(#puma:checked) .s-card13 {
+    order: -10;
+}
+body:has(#reebok:checked) .s-card18 {
+    order: -10;
+}
+
+.sneakers-options {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sneakers-options h2 {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "A";
+    color: #E3E4D1;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.brand form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sneaker-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand label {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #E3E4D1;
+    line-height: 24px;
+}
+
+.size {
+    padding-top: 24px;
+    border-top: 1px solid #FFFFFF14;
+    width: 280px;
+    padding-bottom: 40px;
+}
+
+.size h2 {
+    margin-bottom: 12px;
+}
+
+.size form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.size form label {
+    position: relative;
+}
+
+.size input {
+    appearance: none;
+    position: relative;
+    transition: 0.5s;
+}
+
+.size input::after {
+    content: "";
+    transition: 0.5s;
+    position: absolute;
+    width: 64px;
+    height: 34px;
+    top: 0;
+    left: 0;
+    border: 1px solid #FFFFFF14;
+}
+
+.size input:checked::after {
+    position: absolute;
+    width: 64px;
+    height: 34px;
+    top: 0;
+    left: 0;
+    border: 1px solid #CAF231;
+}
+
+.size input:checked~.sizes {
+    color: #CAF231;
+}
+
+.size p {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "S";
+    color: #E3E4D1;
+    line-height: 16px;
+    margin-top: 6px;
+    margin-left: 24px;
+}
+
+.clear-button {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    align-self: center;
+    display: inline-block;
+    text-decoration: underline;
+    color: #C5C9AE;
+}
+
+.sneakers-options-and-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sneakers-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.sneakers-card {
+    position: relative;
+    width: 266.67px;
+    border: 1px solid #FFFFFF14;
+    border-radius: 24px;
+    background-color: #16161A;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    order: 2;
+}
+
+.sneakers-card:hover {
+    transform: scale(1.04);
+}
+
+.sneakers-cards h6 {
+    order: 2;
+    grid-column: 1/-1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "A";
+    color: #C5C9AE;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.sneakers-card-info {
+    position: absolute;
+    padding: 7px 14px;
+    background-color: #CAF231;
+    border-radius: 9999px;
+    top: 16px;
+    left: 16px;
+}
+
+.sneakers-card-info p {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "S";
+    color: #0C0C0E;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+}
+
+.like-button {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 18px;
+}
+
+.like-button::after {
+    content: url(../images/favorites-button.svg);
+}
+
+.like-button:checked {
+    background-color: #000000;
+}
+
+.sneakers-card-texts h4 {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.sneakers-card-texts h3 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "S";
+    color: #FFFFFF;
+    line-height: 28px;
+}
+
+.sneakers-card-img {
+    margin-top: -60px;
+    margin-bottom: -70px;
+    transform: scale(1.8);
+}
+
+.sneakers-card-price-color {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.s-card2 .sneakers-card-img {
+    transform: scale(1.05) scaleX(-1);
+}
+
+.s-card3 .sneakers-card-img {
+    transform: scale(1.04) scaleX(-1);
+    margin-top: -50px;
+    margin-bottom: -51px;
+}
+
+.s-card4 .sneakers-card-img {
+    transform: scale(1.1);
+    margin-bottom: 1px;
+    margin-top: -25px;
+}
+
+.s-card5 .sneakers-card-img {
+    transform: scale(1.19);
+    margin-top: -10px;
+    margin-bottom: -14px;
+}
+
+.s-card6 .sneakers-card-img {
+    transform: scale(1) scaleX(-1);
+    margin-top: -12px;
+    margin-bottom: -12px;
+}
+
+.s-card7 .sneakers-card-img {
+    transform: scale(1.16) scaleX(-1);
+    margin-top: -50px;
+    margin-bottom: 2px;
+}
+
+.s-card8 .sneakers-card-img {
+    transform: scale(1.25);
+    margin-top: -35px;
+    margin-bottom: -13px;
+}
+
+.s-card9 .sneakers-card-img {
+    transform: scale(1.03) scaleX(-1);
+    margin-top: -23px;
+    margin-bottom: -25px;
+}
+
+.sneakers-card-price-color h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "S";
+    color: #CAF231;
+    line-height: 28px;
+}
+
+.sneakers-card-price-color h5 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 20px;
+    text-decoration: line-through;
+}
+
+.see-more-button {
+    grid-column: 1/-1;
+    order: 3;
+}
+.see-more-button p::after {
+    content: url(../images/reverse.svg);
+    margin-left: 12px;
+}
+
+.see-more-button p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "S";
+    color: #CAF231;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 17px 50px;
+    border: 2px solid #CAF231;
+    width: 397px;
+    margin-left: 225px;
+    border-radius: 9999px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+#see-more {
+    appearance: none;
+}
+
+#see-more:checked ~ .more-sneakers-cards {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 24px;
+    margin-top: -16px;
+}
+
+body:has(#see-more:checked) .see-more-button p {
+    display: none;
+}
+
+body:has(#see-more:checked) .sneakers-cards h6 {
+    display: none;
+}
+
+.more-sneakers-cards {
+    display: none;
+}
+
+.s-card10 .sneakers-card-img {
+    transform: scale(1.07) scaleX(-1);
+    margin-top: -45px;
+    margin-bottom: 0px;
+}
+.s-card11 .sneakers-card-img {
+    transform: scale(1.28) scaleX(-1);
+    margin-top: -20px;
+    margin-bottom: -25px;
+}
+.s-card12 .sneakers-card-img {
+    transform: scale(1.07);
+    margin-top: -20px;
+    margin-bottom: -25px;
+}
+.s-card13 .sneakers-card-img {
+    transform: scale(1.2);
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.s-card14 .sneakers-card-img {
+    transform: scale(0.9) scaleX(-1);
+    margin-top: -95px;
+    margin-bottom: -19px;
+}
+.s-card15 .sneakers-card-img {
+    transform: scale(1.06) scaleX(-1);
+    margin-top: -8px;
+    margin-bottom: -32px;
+}
+.s-card16 .sneakers-card-img {
+    transform: scale(1.15) scaleX(-1);
+    margin-top: -30px;
+    margin-bottom: -5px;
+}
+.s-card17 .sneakers-card-img {
+    transform: scale(1.1);
+    margin-top: -55px;
+    margin-bottom: 20px;
+}
+.s-card18 .sneakers-card-img {
+    transform: scale(1.35) scaleX(-1);
+    margin-top: -37px;
+    margin-bottom: 2px;
+}
+
+footer {
+    background-color: #0A0A0C;
+    border-top: 1px solid #FFFFFF14;
+    padding: 80px 0px 80px 0px;
+}
+
+.top-footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-logo-info {
+    width: 268px;
+}
+
+.footer-logo {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "A";
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.footer-logo-info p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.social-medias {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.top-footer ul li p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #FFFFFF;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.top-footer ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 24px;
+}
+
+.top-footer h3 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-nav3 li:nth-child(3) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-footer input {
+    width: 191px;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    border: 1.6px solid #FFFFFF14;
+    outline: none;
+    background-color: #1F201D;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "S";
+    transition: 0.3s;
+}
+
+.top-footer input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "S";
+    color: #6B7280;
+    line-height: 100%;
+}
+
+.top-footer input:focus {
+    border-color: #CAF231;
+}
+
+.top-footer input:invalid {
+    border-color: red;
+}
+
+.ok-button {
+    padding: 8px 24px;
+    border-radius: 9999px;
+    background-color: #CAF231;
+    color: #171E00 !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF14;
+    padding-top: 40px;
+    margin-top: 80px;
+}
+
+.bottom-footer h2 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 20px;
+}
+
+.footer-nav4 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer-nav4 li a {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 20px;
+}
