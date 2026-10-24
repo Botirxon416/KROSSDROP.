@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KROSSDROP.</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="../index.html" class="logo">KROSSDROP.</a>
+            <ul class="navigation">
+                <li>
+                    <a href="../index.html">Bosh sahifa</a>
+                </li>
+                <li>
+                    <a href="./pages/market.html">Do'kon</a>
+                </li>
+                <li>
+                    <a href="./new-trainers.html">Yangi kelganlar</a>
+                </li>
+                <li>
+                    <a href="./about-us.html">Biz haqimizda</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Aloqa</a>
+                </li>
+            </ul>
+            <ul class="header-buttons">
+                <li>
+                    <a href=""><img src="../images/search-button.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="./to-favorites.html"><img src="../images/favorites-button.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="./empty-cart.html"><img src="../images/basket-buttno.svg" alt=""></a>
+                </li>
+                <li>
+                    <label for="login" class="login-button">
+                        KIRISH
+                        <input type="checkbox" id="login">
+                        <div class="login">
+                            <div>
+                                <h2>KROSSDROP'GA<br>QO'SHILING</h2>
+                                <p>Eksklyuziv yangiliklardan va drop'lardan xabardor bo'ling.</p>
+                                <form>
+                                    <label for="name">To'liq ismingiz</label>
+                                    <input type="text" id="name">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email">
+                                    <label for="parol">Parol</label>
+                                    <input type="password" id="parol">
+                                    <button type="submit">Ro'yxatdan o'tish</button>
+                                </form>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="section-header-nav">
+            <div class="container section-nav">
+                <a href="../index.html">Bosh sahifa /</a>
+                <a href="./contact.html">Aloqa</a>
+            </div>
+        </section>
+         
+        <section class="contact-section">
+            <div class="container">
+
+                <div class="contact-left">
+
+                    <p class="contact-label">BIZ BILAN BOG‘LANING</p>
+
+                    <h1 class="contact-title">
+                        GAPNI<br>
+                        BOSHLAYMIZ<span>.</span><br>
+                        ALOQA
+                    </h1>
+
+                    <p class="contact-text">
+                        Savolingiz bormi? Biz bilan bog‘laning.
+                        Jamoamiz buyurtma, mahsulot va boshqa
+                        savollaringiz bo‘yicha yordam beradi.
+                    </p>
+
+                    <div class="contact-cards">
+
+                        <a href="tel:+998712000000" class="contact-card">
+                            <span class="contact-icon">↗</span>
+                            <p class="card-title">TELEFON</p>
+                            <p class="card-text">+998 71 200 00 00</p>
+                        </a>
+
+                        <a href="mailto:salom@krossdrop.uz" class="contact-card">
+                            <span class="contact-icon">✉</span>
+                            <p class="card-title">EMAIL</p>
+                            <p class="card-text">krossdrop.uz@gmail.com</p>
+                        </a>
+
+                        <div class="contact-card">
+                            <span class="contact-icon">⌖</span>
+                            <p class="card-title">MANZIL</p>
+                            <p class="card-text">Amir Temur ko‘chasi, 15-uy</p>
+                        </div>
+
+                        <a href="https://t.me/krossdrop_uz" class="contact-card">
+                            <span class="contact-icon">➤</span>
+                            <p class="card-title">TELEGRAM</p>
+                            <p class="card-text">@krossdrop_uz</p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form">
+
+                    <p class="form-label">ALOQA FORMASI</p>
+
+                    <h2 class="form-title">XABAR YUBORING<span>.</span></h2>
+
+                    <p class="form-text">
+                        Ma’lumotlaringizni kiriting va bizga xabar yuboring.
+                    </p>
+
+                    <form action="#" method="post">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="name">ISMINGIZ</label>
+                                <input type="text" id="name" name="name" placeholder="Ali Valiyev" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" placeholder="example@mail.uz" required>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">MUROJAAT MAVZUSI</label>
+
+                            <select id="subject" name="subject" required>
+                                <option value="" selected disabled>
+                                    Mavzuni tanlang
+                                </option>
+                                <option value="order">Buyurtma holati</option>
+                                <option value="delivery">Yetkazib berish</option>
+                                <option value="product">Mahsulot haqida</option>
+                                <option value="return">Qaytarish</option>
+                                <option value="other">Boshqa savol</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">XABARINGIZ</label>
+
+                            <textarea id="message" name="message" placeholder="Xabaringizni yozing..."
+                                required></textarea>
+                        </div>
+
+                        <label class="privacy">
+                            <input type="checkbox" required>
+                            <span>
+                                Maxfiylik siyosati shartlariga roziman.
+                            </span>
+                        </label>
+
+                        <button type="submit" class="send-button">
+                            XABARNI YUBORISH <span>↗</span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+            <div class="container">
+
+                <div class="faq-heading">
+                    <p class="faq-label">YORDAM MARKAZI</p>
+
+                    <h2 class="faq-title">
+                        KO‘P SO‘RALADIGAN<br>
+                        <span>SAVOLLAR.</span>
+                    </h2>
+
+                    <p class="faq-text">
+                        Buyurtma va mahsulotlar haqida kerakli javoblarni toping.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq1">
+
+                        <label for="faq1" class="faq-question">
+                            <span>01</span>
+                            Yetkazib berish qancha vaqt oladi?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Toshkent shahri bo‘ylab yetkazib berish muddati
+                            buyurtmaga bog‘liq. Viloyatlarga yetkazish odatda
+                            2–3 ish kunini olishi mumkin.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq2">
+
+                        <label for="faq2" class="faq-question">
+                            <span>02</span>
+                            To‘lov usullari qanday?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Mavjud to‘lov usullari buyurtmani rasmiylashtirish
+                            vaqtida ko‘rsatiladi.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq3">
+
+                        <label for="faq3" class="faq-question">
+                            <span>03</span>
+                            Mahsulotni qaytarish mumkinmi?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Qaytarish imkoniyati mahsulot holati va do‘konning
+                            qaytarish shartlariga bog‘liq. Batafsil ma’lumot
+                            uchun biz bilan bog‘laning.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq4">
+
+                        <label for="faq4" class="faq-question">
+                            <span>04</span>
+                            Mahsulotlar originalmi?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Mahsulotning kelib chiqishi va kafolat shartlarini
+                            xarid qilishdan oldin do‘kon bilan aniqlashtiring.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq5">
+
+                        <label for="faq5" class="faq-question">
+                            <span>05</span>
+                            O‘lchamni qanday tanlayman?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Oyoq uzunligingizni santimetrda o‘lchang va
+                            mahsulot sahifasidagi o‘lchamlar jadvalini tekshiring.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq6">
+
+                        <label for="faq6" class="faq-question">
+                            <span>06</span>
+                            Buyurtma holatini qanday bilaman?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Buyurtmangiz holatini bilish uchun buyurtma
+                            raqamingiz bilan bizga Telegram orqali yozing.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq7">
+
+                        <label for="faq7" class="faq-question">
+                            <span>07</span>
+                            Chegirmalar qachon bo‘ladi?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Chegirmalar va maxsus takliflarni do‘kon sahifasida
+                            hamda rasmiy aloqa kanallarimizda kuzatib boring.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq8">
+
+                        <label for="faq8" class="faq-question">
+                            <span>08</span>
+                            Do‘kondan borib xarid qilsa bo‘ladimi?
+                            <b>+</b>
+                        </label>
+
+                        <div class="faq-answer">
+                            Do‘konga borish va mahsulotni joyida xarid qilish
+                            imkoniyatini oldindan biz bilan aniqlashtiring.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="faq-bottom">
+
+                    <div>
+                        <p class="bottom-label">JAVOB TOPA OLMADINGIZMI?</p>
+                        <h3>Bizga yozing<span>.</span></h3>
+                        <p class="bottom-text">
+                            Jamoamiz savollaringizga javob berishga tayyor.
+                        </p>
+                    </div>
+
+                    <a href="https://t.me/krossdrop_uz" class="telegram-button">
+                        <span>➤</span> TELEGRAM ORQALI YOZISH
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="top-footer">
+                <div class="footer-logo-info">
+                    <a href="../index.html" class="footer-logo">KROSSDROP.</a>
+                    <p>O'zbekistondagi eng premium krossovkalar do'koni. Faqat<br>original va eksklyuziv modellar.
+                    </p>
+                    <div class="social-medias">
+                        <div class="social-media">
+                            <a href="https://facebook.com" target="_blank">
+                                <img src="../images/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://instagram.com" target="_blank">
+                                <img src="../images/instagram.png" alt="Instagram">
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://telegram.org" target="_blank">
+                                <img src="../images/telegram.png" alt="Telegram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-navigation">
+                    <ul class="footer-nav1">
+                        <li>
+                            <p>DO'KON</p>
+                        </li>
+                        <li>
+                            <a href="">Yugurish poyabzallari</a>
+                        </li>
+                        <li>
+                            <a href="">Lifestyle modellar</a>
+                        </li>
+                        <li>
+                            <a href="">Basketbol kolleksiyasi</a>
+                        </li>
+                        <li>
+                            <a href="">Cheklangan nashrlar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation2">
+                    <ul class="footer-nav2">
+                        <li>
+                            <p>YORDAM</p>
+                        </li>
+                        <li>
+                            <a href="">Yetkazib berish</a>
+                        </li>
+                        <li>
+                            <a href="">Qaytarish va almashtirish</a>
+                        </li>
+                        <li>
+                            <a href="">To'lov usullari</a>
+                        </li>
+                        <li>
+                            <a href="">Tez-tez beriladigan savollar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-email">
+                    <ul class="footer-nav3">
+                        <li>
+                            <p>NEWSLETTER</p>
+                        </li>
+                        <li>
+                            <h3>Yangi drop va chegirmalardan<br>birinchi bo'lib xabardor bo'ling.</h3>
+                        </li>
+                        <li>
+                            <input type="email" placeholder="Emailingiz">
+                            <button type="submit" class="ok-button">OK</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <h2>© 2024 KROSSDROP. Barcha huquqlar himoyalangan.</h2>
+                <div class="footer-bottom-navigation">
+                    <ul class="footer-nav4">
+                        <li>
+                            <a href="">Maxfiylik siyosati</a>
+                        </li>
+                        <li>
+                            <a href="">Foydalanish shartlari</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

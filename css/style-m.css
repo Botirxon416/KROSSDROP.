@@ -86,7 +86,7 @@ header {
     gap: 24px;
 }
 
-.header-buttons li:nth-child(4) a {
+.login-button {
     padding: 8px 24px;
     background-color: #CAF231;
     border-radius: 9999px;
@@ -94,6 +94,105 @@ header {
     font-weight: 400;
     font-family: "S";
     color: #171E00;
+    cursor: pointer;
+}
+
+#login {
+    appearance: none;
+}
+
+#login:checked ~ .login {
+    display: flex;
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000CC;
+    backdrop-filter: blur(12px);
+}
+
+.login div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #080808;
+    padding: 40px;
+    width: 448px;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+}
+
+.login div h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "A";
+    color: #F4F2ED;
+    line-height: 38px;
+    letter-spacing: 0.64px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login div p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "S";
+    color: #B6B4BA;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.login div form {
+    margin-top: 32px;
+}
+
+.login div form label {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "S";
+    color: #C5C9AE;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.login div form input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.login div form input:focus {
+    border-color: #CAF231;
+}
+
+.login div form button {
+    width: 100%;
+    padding: 16px 106px;
+    border-radius: 9999px;
+    border: none;
+    background-color: #CAF231;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "S";
+    color: #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 #all-sneakers-header {
@@ -114,6 +213,11 @@ header {
     color: #C5C9AE;
     line-height: 24px;
     letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.market-section-nav a:hover {
+    color: #CAF231;
 }
 
 .market-section-nav a:nth-child(2) {
